@@ -7,7 +7,7 @@ Implementar uma verificação pós-operatória rigorosa e organizar com precisã
 
 
 # Como Usar
-
+## Para ultilizar o banco de dados
 
 # Tecnologias ultilizadas 
 -Linguagens
@@ -24,13 +24,13 @@ Esta tabela apresenta uma ID: `Id_Kit`, um nome `nome_kit` referente ao nome pop
 ### Ferramentas_Kit
 Essa Tabela apresenta duas chaves estrangeiras: `id_kit` e `id_ferramenta` que referenciam o kit e as ferramentas inclusas nele, de forma a facilitar a busca por quais ferramentas estão inclusas no kit, e tambem um `totalFerramentas` que indica quantas daquela ferramenta aparecem naquele kit.
 ### Pincas
-Essa Tabela apresenta uma id `ID_pinca` para facilitar a busca entre outras pincas tambem como outras informações como o seu tamanho: `tamanho_pinca`, o seu tipo: `tipo_pinca`, a quantidade em estoque: `qtde_pincas`, e outra coluna referente ao seu tipo: `tipo`
+Essa Tabela apresenta uma id `ID_pinca` para facilitar a busca entre outras pincas tambem como outras informações como o seu tamanho: `tamanho_pinca`, o seu tipo: `tipo_pinca`, a quantidade em estoque: `qtde_pincas`, e outra coluna referente ao seu tipo: `tipo`.
 ### Tesoura
-Essa Tabela apresenta uma id `ID_tesoura` para facilitar a busca entre outras pincas tambem como outras informações como o seu tipo: `tipo_tesoura`, e seu nome: `Nome_tesoura`
+Essa Tabela apresenta uma id `ID_tesoura` para facilitar a busca entre outras pincas tambem como outras informações como o seu tipo: `tipo_tesoura`, e seu nome: `Nome_tesoura`.
 ### Afastador
-Essa Tabela apresenta uma id `ID_afastador` para facilitar a busca entre outros afastadores tambem como outras informações como o seu tamanho: `tamanho_afastador`, o seu tipo: `tipo_afastador`, a quantidade em estoque: `qtde_afastador`, e outra coluna referente ao seu modelo: `modelo`
+Essa Tabela apresenta uma id `ID_afastador` para facilitar a busca entre outros afastadores tambem como outras informações como o seu tamanho: `tamanho_afastador`, o seu tipo: `tipo_afastador`, a quantidade em estoque: `qtde_afastador`, e outra coluna referente ao seu modelo: `modelo`.
 ### Usuarios
-Essa tabela apresenta os dados de login dos usuarios registrados, como seu nome: `nome`, uma id: `id_usuario`, seu cpf:`CPF`, informações referentes ao tipo de conta: `tipo_usuario` e tambem a senha que ele usa para login:`senha`   
-
-
+Essa tabela apresenta os dados de login dos usuarios registrados, como seu nome: `nome`, uma id: `id_usuario`, seu cpf:`CPF`, informações referentes ao tipo de conta: `tipo_usuario` e tambem a senha que ele usa para login:`senha`.   
+### Kit_status_cirurgico e Kit_status_cme
+Ambas tabelas tem uso similar, sendo a diferença que o cirurgico ocorre no pré/pos cirurgico, enquanto o cme é na base do cme, elas incluem: `id`, tres chaves estrangeira: `id_kit` `id_usuario` e `id_ferramenta` e tambem duas outras, respectivamente uma timestamp: `data_hora_status`, e tambem o status: `status`, ambas possuem tambem um espaço para obsevações no qual é destinado a falar sobre possiveis peças faltantes.
 # Licenca
