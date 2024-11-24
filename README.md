@@ -1,7 +1,7 @@
 # *Controle de Instrumentos Cirurgicos*
 
 # Descricao
-## Esse projeto visa 
+Implementar uma verificação pós-operatória rigorosa e organizar com precisão os instrumentos antes de cada cirurgia. Isso reduzirá o desperdício de recursos, evitará perdas e garantirá que apenas os instrumentos realmente necessários sejam enviados para a cirurgia.
 
 # Funcionalidades
 
